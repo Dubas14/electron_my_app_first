@@ -6,12 +6,15 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: true
+      preload: path.join(__dirname, 'preload.js'),  
+      nodeIntegration: true,  
+      contextIsolation: false,  
+      enableRemoteModule: true  
     }
   });
 
-  win.loadFile('index.html');
+  win.loadFile('login.html');  
+  
 }
 
 app.whenReady().then(() => {

@@ -8,14 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <h2>Вітаю у вашому кабінеті!</h2>
-        <p>Це ваша керувальна панель.</p>
+        <h2>Welcome to your dashboard!</h2>
+        <div id="userInfo">
+            <!-- Тут будуть відображатись дані користувача -->
+            <img id="userImage" src="" alt="User Image" width="100" height="100">
+            <h3 id="userName"></h3>
+            <p id="userEmail"></p>
+        </div>
         <button id="logout">Logout</button>
     </div>
-    <script>
-        document.getElementById('logout').addEventListener('click', function () {
-            window.location.href = 'index.html';
-        });
-    </script>
+    <script src="renderer.js"></script>
 </body>
 </html>

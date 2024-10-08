@@ -75,3 +75,18 @@ button:hover {
   color: green;
   font-size: 1rem;
 }
+
+#userInfo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#userImage {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
